@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet"href="style.css">
+
+<script src="https://kit.fontawesome.com/be68bb502e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        
+       <div class="container">
+        <nav>
+          
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi I'm<span> Ishwari</span> <br>from Arvi </h1>
+        </div>
+       </div> 
+    </div>
+    <!-- ------------about------------ -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img.jpg"width="300px">
+                </div>
+                    <div class="about-col-2">
+                <h1 class="sub-tittle">About me</h1>
+                <p>My name Ishwari. I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide.</p>
+
+               <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+            </div>
+            
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Java</span><br>Certified Java Developer</li>
+                    <li><span>Web Development</span><br>HTML, CSS, JavaScript, React, Node.js</li>
+                    <li><span>Database</span><br>MongoDB, Firebase</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Software Developer</span><br>Worked on multiple web projects</li>
+                
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Master’s in Computer Science</span><br>Degree College Of Physical Education, Amravati</li>
+                    <li><span>Bachelor’s in Computer Science</span><br>Vidhya Bharati Mahavidyalaya, Amravati</li>
+                    <li><span>Java Certification</span><br>From Besant Technology</li>
+                </ul>
+            </div>
+            
+
+                
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+                
+   
+
+    <div class="copyright">
+        copyright@Ishwari. Made With ❤️ By Ishwari Gawande
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>

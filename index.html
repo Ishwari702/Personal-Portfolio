@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet"href="style.css">
+
+<script src="https://kit.fontawesome.com/be68bb502e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        
+       <div class="container">
+        <nav>
+            <img src="images/portfoli-logo.jpg"class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi I'm<span> Ishwari</span> <br>from Arvi </h1>
+        </div>
+       </div> 
+    </div>
+    <!-- ------------about------------ -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img.jpg"width="300px">
+                </div>
+                    <div class="about-col-2">
+                <h1 class="sub-tittle">About me</h1>
+                <p>My name Ishwari. I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide.</p>
+
+               <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+            </div>
+         
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Java</span><br>Certified in Java </li>
+                    <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                    <li><span>Database</span><br>MYSQL, Firebase</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Fresher</span></li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Master's in Computer Application</span><br>Degree College Of Physical Education, Amravati</li>
+                    <li><span>Bachelor’s in Computer Science</span><br>Vidhya Bharati Mahavidyalaya, Amravati</li>
+                    <li><span>Java Certification</span><br>From Besant Technology</li>
+                </ul>
+            </div>
+            
+
+                
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+                
+   
+   <!-- ----------------Portfolio------------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <!-- Work 1 -->
+            <div class="work">
+                <img src="images/work1.webp" alt="Social Media App">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A social media application allows users to connect, share activities, and engage with others in an online community.</p>
+                    <a href="#"><i class="fa fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <!-- Work 2 -->
+            <div class="work">
+                <img src="images/work2.webp" alt="Music App">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Music apps allow users to access and personalize their listening experience. Examples include Spotify and Apple Music.</p>
+                    <a href="#"><i class="fa fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <!-- Work 3 -->
+            <div class="work">
+                <img src="images/work3.avif" alt="Online Shopping Media App">
+                <div class="layer">
+                    <h3>Online Shopping Media App</h3>
+                    <p>Online shopping enables consumers to buy products directly from the internet conveniently.</p>
+                    <a href="#"><i class="fa fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+    <!-----------------contact------------->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> contact@example.com</p>
+            <p><i class="fas fa-phone"></i> 9087655456</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    
+        <!-- Form Section -->
+        <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+            <p id="msg"></p>
+        </form>
+    
+        <!-- Download CV Button -->
+        <a href="images/Ishwari Gawande.pdf" id="download-cv">Download CV</a>
+    </section>
+    <div class="copyright">
+        copyright@Ishwari. Made With ❤️ By Ishwari Gawande
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
